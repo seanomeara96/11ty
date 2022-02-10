@@ -14,6 +14,8 @@
       @media (min-width: 800px) {
         top: -200px;
         width: 100%;
+        left: 0;
+        height: auto;
       }
     }
   }
