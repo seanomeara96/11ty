@@ -3,7 +3,7 @@ const path = require("path");
 
 const isDev = process.env.APP_ENV === "development";
 
-const manifestPath = path.resolve(__dirname, "dist", "assets", "manifest.json");
+const manifestPath = path.resolve(__dirname, "docs", "assets", "manifest.json");
 const manifest = isDev
   ? {
       "main.js": "/assets/index.js",
@@ -24,7 +24,7 @@ module.exports = function (eleventyConfig) {
     callbacks: {
       ready: function (err, bs) {
         bs.addMiddleware("*", (req, res) => {
-          const content_404 = fs.readFileSync("dist/404/index.html");
+          const content_404 = fs.readFileSync("docs/404/index.html");
           res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" });
           res.write(content_404);
           res.end();
@@ -36,7 +36,7 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: "src",
-      output: "dist",
+      output: "docs",
     },
     passthroughFileCopy: true,
   };
