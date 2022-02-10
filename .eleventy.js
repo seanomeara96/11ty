@@ -12,12 +12,10 @@ const manifest = isDev
   : JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy({ "src/static": "/" });
+  eleventyConfig.addPassthroughCopy("src/assets/images");
   // Add a shortcode for bundled CSS.
   process.env.mainScript = manifest["main.js"];
   process.env.mainStyle = manifest["main.css"];
-
-  console.log(process.env.mainScript, "!!!!!!!!!!!!!!!!!!!!!");
 
   eleventyConfig.setBrowserSyncConfig({
     files: [manifestPath],

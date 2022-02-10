@@ -1,0 +1,12 @@
+.page-section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  &--small {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  &--dark-blue {
+    background-color: $darkBlue;
+    color: $lightText;
+  }
+}

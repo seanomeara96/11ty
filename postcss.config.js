@@ -3,7 +3,7 @@ const autoprefixer = require("autoprefixer");
 const plugins = [
   require("postcss-simple-vars"),
   require("postcss-import"),
-  require("postcss-nested-vars"),
+  require("postcss-nested"),
   require("postcss-mixins"),
   autoprefixer,
 ];
@@ -15,7 +15,7 @@ if (!isDev) {
   const cssnano = require("cssnano");
   [].push.apply(plugins, [
     purgecss({
-      content: ["src/**/*.ejsk", "src/**/*.md", "src/**/*.js"],
+      content: ["src/**/*.ejs", "src/**/*.md", "src/**/*.js"],
       defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
     }),
     cssnano({

@@ -1,0 +1,17 @@
+.list {
+  ul {
+    padding: 0;
+  }
+  &__sub-title {
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  &__item {
+    list-style-type: none;
+    h4 {
+      color: $orange;
+      text-transform: uppercase;
+      line-height: 1.6;
+    }
+  }
+}
