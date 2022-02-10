@@ -1,11 +1,160 @@
-<%- include('/header') %>
+<%- include('/header', {title: "DCI Homepage", description: "DCI description"})
+%>
+<main>
+  <section>
+    <h1>Clondalkin`s highest independently google rated physio clinic</h1>
+    <button>Book an appointment</button>
+  </section>
+  <section>
+    <div>
+      <h3>DC Physio CLONDALKIN</h3>
 
-<h1>Giffleball</h1>
-<a href="/about"><h2>hello world</h2></a>
-<ul>
-  <li><a href="img/???.jpg">???.jpg</a></li>
-  <li><a href="img/….jpg">….jpg</a></li>
-  <li><a href="img/parrot.gif">parrot.gif</a></li>
-</ul>
+      <address>
+        Unit 4, Newlands Business Park, Newlands Road, Clondalkin
+      </address>
 
+      <span> 5.0 86 reviews</span>
+      <div class="review">
+        <div class="review__avatar">Avatar</div>
+        <div class="review__author">Ciara B</div>
+        <div class="review__rating">★★★★★</div>
+        <div class="review__content">
+          Last month, I developed an injury while playing football and decided
+          to go see a physio as I was not able to do simple daily tasks of my
+          own. Fortunately, a friend recommended physiotherapy Clondalkin and
+          I'm so grateful to him for that now. My body has fully recovered after
+          only a few sessions. Good Job guys!
+        </div>
+      </div>
+      <div class="review">
+        <div class="review__avatar">Avatar</div>
+        <div class="review__author">Michael L</div>
+        <div class="review__rating">★★★★★</div>
+        <div class="review__content">
+          I had a neck problem with a disc protruding giving me huge discomfort.
+          My Doctor said there was nothing they could do but surgery, which may
+          not work. I researched myself and found DC physiotherapy. Dave was
+          amazing he talked me through the procedure and after a number of
+          sessions, I was back in the gym and playing basketball again. A
+          totally amazing result. Dave was so knowledgeable and I have never
+          looked back. Had one or two maintenance session since, but all is
+          perfect now. Could not recommend him highly enough.
+        </div>
+      </div>
+      <div class="review">
+        <div class="review__avatar">Avatar</div>
+        <div class="review__author">Lucy Murphy P</div>
+        <div class="review__rating">★★★★★</div>
+        <div class="review__content">
+          After trying other physios and every drug under the sun, I searched
+          for an alternative treatment for the severe pain my herniated discs
+          were causing me. After a 30 min consultation with Robbie, I felt
+          assured that he knew what he was talking about. We started a 10
+          session course of spinal decompression. The treatment itself was very
+          comfortable, and I loved that it was treating the issue, rather than
+          the symptoms. I started right after a 3 week long back spasm where I
+          couldn't stand up or put my shoes on without help, and I am now pain
+          free. I want to thank Robbie, Kane, and David for their help and
+          welcoming environment throughout my course of treatment, and I would
+          recommend this to anyone.
+        </div>
+      </div>
+    </div>
+    <%- include('/specialties')%>
+  </section>
+  <section>
+    <h2>What our patients say about us</h2>
+    <div class="review">
+      <div class="review__avatar">Avatar</div>
+      <div class="review__author">Gavin O'Brien</div>
+      <div class="review__rating">★★★★★</div>
+      <div class="review__content">
+        I can highly recommend DC Physiotherapy in Clondalkin Village. I
+        experienced lower back pain over the last 3-4 months as a result of
+        working from home and it was starting to take its toll. I heard about DC
+        Physiotherapy from friends and I am delighted I made an appointment to
+        see David as within 5 mins, he was able to provide a root cause for the
+        pain. Three sessions later and I am back running pain free. Thanks David
+        for your guidance and genuine interest in my well being.
+      </div>
+    </div>
+    <div class="review">
+      <div class="review__avatar">Avatar</div>
+      <div class="review__author">Jacob King</div>
+      <div class="review__author">★★★★★</div>
+      <div class="review__content">
+        I have had a painful herniated disc in my neck for over 12 years .The
+        pain travelled throughout my shoulders arms and hands.I experienced
+        sleepless night's from time to time.When I heard about IDD therapy I
+        decided to give it a try. After a few visit's I found a good improvement
+        and was soon painfree.The improvement continued throughout my
+        treatment.I am now free from pain and painkillers. I would definitely
+        recommend anybody with physical issues to go for IDD therapy. I am glad
+        I did and its safe and painless.James.
+      </div>
+    </div>
+    <div class="review">
+      <div class="review__avatar">Avatar</div>
+      <div class="review__author">David Long</div>
+      <div class="review__rating">★★★★★</div>
+      <div class="review__content">
+        About two years ago I injured my lower back which caused restricted
+        movement and a lot of sciatica pain in my left leg. I tried ignoring it,
+        hoping it would get better over time. surprisingly it didn't. I went for
+        a scan and the the consultant said my only option was an operation to
+        remove the section of herniated disc that was applying pressure onto the
+        sciatica nerve. To be honest the taught of an operation scared me. So I
+        decided to try alternative treatment first. I tried Physiotherapy, with
+        no success. Then I tried amatsu treatment, still no success.
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>AT DC PHYSIO CLONDALKIN</h2>
+    <h3>we have a keen interest in human movement with particular focus on:</h3>
+    <ul>
+      <li>
+        <h4>Low Back Pain</h4>
+        <p>
+          We specialise in treating low back pain. Physiotherapists in our
+          Physio Clondalkin are chartered and are experts in their field.
+        </p>
+      </li>
+      <li>
+        <h4>Neck Pain</h4>
+        <p>
+          Neck pain can be a result of increased pressure on a spinal disc.
+          Muscle strain or muscle spasm are common causes of neck pain.
+        </p>
+      </li>
+      <li>
+        <h4>Non-Surgical Spinal Decompression</h4>
+        <p>
+          Non-Surgical Spinal Decompression Therapy is a revolutionary treatment
+          for Low Back and Neck Pain.
+        </p>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <%- include('/specialties')%>
+    <div>
+      <h5>Clondalkin Clinic</h5>
+
+      <p>
+        The clinics flexible opening times and location in Clondalkin, Dublin 22
+        makes us ideal for patients who require appointments outside normal
+        working hours.
+      </p>
+
+      <strong>Opening hours</strong>
+      <ul>
+        <li>Monday – Friday 8:00 am – 8:00 pm</li>
+        <li>Saturday 9:00 am – 6:00 pm</li>
+        <li>Sunday Closed</li>
+      </ul>
+      <button>Book an appointment</button>
+    </div>
+  </section>
+</main>
 <%- include('/footer') %>

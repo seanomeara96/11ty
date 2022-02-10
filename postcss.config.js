@@ -1,6 +1,12 @@
 const autoprefixer = require("autoprefixer");
 
-const plugins = [autoprefixer];
+const plugins = [
+  require("postcss-simple-vars"),
+  require("postcss-import"),
+  require("postcss-nested-vars"),
+  require("postcss-mixins"),
+  autoprefixer,
+];
 
 const isDev = process.env.APP_ENV === "development";
 
