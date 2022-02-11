@@ -52,16 +52,17 @@ body {
     width: 100%;
   }
 .hero__img img {
+      -o-object-position: left;
+         object-position: left;
       position: relative;
+      -o-object-fit: cover;
+         object-fit: cover;
       height: 100%;
-      left: -100px;
+      width: 100%;
     }
 @media (min-width: 800px) {
 .hero__img img {
-        top: -200px;
-        width: 100%;
-        left: 0;
-        height: auto
+        left: 0
     }
       }
 .hero__overlay {

@@ -8,14 +8,13 @@
     height: 100%;
     width: 100%;
     img {
+      object-position: left;
       position: relative;
+      object-fit: cover;
       height: 100%;
-      left: -100px;
+      width: 100%;
       @media (min-width: 800px) {
-        top: -200px;
-        width: 100%;
         left: 0;
-        height: auto;
       }
     }
   }
