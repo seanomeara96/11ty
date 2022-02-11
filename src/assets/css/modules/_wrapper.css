@@ -1,3 +1,6 @@
 .wrapper {
-  margin: 1rem;
+  width: calc(100% - 2rem);
+  max-width: 1200px;
+
+  margin: auto;
 }

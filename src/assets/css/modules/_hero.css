@@ -13,9 +13,6 @@
       object-fit: cover;
       height: 100%;
       width: 100%;
-      @media (min-width: 800px) {
-        left: 0;
-      }
     }
   }
   &__overlay {
@@ -30,8 +27,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    &__inner {
+      display: inline-block;
+      position: relative;
+      max-width: 600px;
+      float: right;
+      text-align: right;
+    }
   }
   &__header {
     line-height: 1.8;
+    font-size: 2rem;
+    @media (min-width: 600px) {
+      font-size: 3rem;
+    }
+    overflow-wrap: break-word;
+  }
+  &__button {
   }
 }
