@@ -2,38 +2,19 @@
   position: relative;
   height: 100vh;
   overflow: hidden;
-  &__img {
-    display: block;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    img {
-      object-position: left;
-      position: relative;
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
-    }
-  }
   &__overlay {
-    color: #fff;
-    text-transform: uppercase;
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: $greyFilter;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    &__inner {
-      display: inline-block;
-      position: relative;
-      max-width: 600px;
-      float: right;
-      text-align: right;
-    }
+  }
+  &__inner {
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    max-width: 600px;
+    float: right;
+    text-align: right;
   }
   &__header {
     line-height: 1.8;
@@ -42,7 +23,5 @@
       font-size: 3rem;
     }
     overflow-wrap: break-word;
-  }
-  &__button {
   }
 }

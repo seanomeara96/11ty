@@ -1,4 +1,5 @@
-.list {
+.pain-points {
+  color: #fff;
   ul {
     padding: 0;
   }
@@ -7,6 +8,7 @@
     font-weight: 100;
   }
   &__item {
+    color: $lightText;
     list-style-type: none;
     h4 {
       color: $orange;
