@@ -29,6 +29,10 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+.page-section--dark-blue {
+    background-color: #033150;
+    color: #fff;
+  }
 .wrapper {
   width: calc(100% - 4rem);
   max-width: 1200px;
@@ -126,4 +130,33 @@ body {
 .overlay--dark-blue {
     background-color: rgba(39, 59, 86, 0.57);
   }
-
+.business-details {
+    display: flex;
+    flex-direction: column;
+}
+.business-details__booking h2 {
+            color: #fff;
+        }
+.business-details__booking {
+        text-align: center;
+        padding: 2rem;
+}
+.business-details__info {
+        display: flex;
+    }
+.business-details__info div {
+            width:100%;
+            padding: 2rem;
+        }
+.business-details__summary {
+        background-color: #ff782b;
+    }
+.business-details__address {
+        background-color: #8b99a2;
+    }
+.business-details__phone {
+        background-color:#4e78b1;
+    }
+.business-details__working-hours {
+        background-color: #649be4;
+    }
