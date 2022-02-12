@@ -1,0 +1,9 @@
+.rows {
+    & > div {
+        width:100%;
+    }
+    @media (min-width: 600px) {
+        display: flex;
+        gap: 2rem;
+    }
+}

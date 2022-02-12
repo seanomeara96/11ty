@@ -16,4 +16,10 @@
     background-color: $darkBlue;
     color: #fff;
   }
+  &--navy {
+    background-color: $navy;
+  }
+  &--light-grey, &--light-gray {
+    background-color: $lightGray;
+  }
 }

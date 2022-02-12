@@ -1,7 +1,38 @@
 .footer {
-  background-color: $navy;
-  color: $lightText;
+  @media (min-width: 800px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  color: $lightGray;
   a {
-    color: inherit;
+    color: $orange;
+    text-decoration: none;
+  }
+  &__social,
+  &__pages,
+  &__copyright {
+    margin: 1rem 0;
+    width: 100%;
+    ul {
+      a {
+        color: inherit;
+      }
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+  }
+  &__social {
+    order: 3;
+  }
+  &__pages {
+    order: 2;
+  }
+  &__copyright {
+    order: 1;
   }
 }

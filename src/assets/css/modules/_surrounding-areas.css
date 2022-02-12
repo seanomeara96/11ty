@@ -1,0 +1,8 @@
+.surrounding-areas {
+    li {
+        color: #000;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+    }
+}
