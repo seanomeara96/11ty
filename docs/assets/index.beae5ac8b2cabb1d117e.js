@@ -1,0 +1,1 @@
+(()=>{var e,n,t;e=document.querySelector("body"),n=document.querySelector(".nav__button"),t=document.querySelector(".nav__links"),n.addEventListener("click",(function(){t.classList.toggle("nav__links--is-open"),e.classList.toggle("no-scroll")}))})();

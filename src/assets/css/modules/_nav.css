@@ -95,7 +95,23 @@
       background-color: $lightGray;
     }
   }
+  & a {
+    display: inline-block;
+    padding: 0.2rem;
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+      color: $orange;
+    }
+  }
   &__link {
+    text-transform: uppercase;
+    display: inline-block;
+    &--active a {
+      border: 2px solid $orange;
+      color: $orange;
+      font-weight: 700;
+    }
     position: relative;
     margin-bottom: 0.2rem;
   }
@@ -106,13 +122,6 @@
     &__sub-menu li {
       margin-bottom: 0.7rem;
       border-bottom: 1px solid $lightGray;
-    }
-  }
-  & a {
-    color: inherit;
-    text-decoration: none;
-    &:hover {
-      color: $orange;
     }
   }
 }
