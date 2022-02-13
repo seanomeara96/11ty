@@ -19,7 +19,11 @@
   &--navy {
     background-color: $navy;
   }
-  &--light-grey, &--light-gray {
+  &--white {
+    background-color: #fff;
+  }
+  &--light-grey,
+  &--light-gray {
     background-color: $lightGray;
   }
 }

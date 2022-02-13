@@ -1,3 +1,57 @@
 .nav {
-  display: none;
+  &__button,
+  &__links {
+    background-color: #fff;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 100;
+  &__button {
+    text-align: right;
+  }
+  &__links {
+    text-wrap: no-wrap;
+    transition: ease 0.3s;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    overflow: hidden;
+    &--is-open {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 800px) {
+    position: sticky;
+    height: auto;
+    top: 0;
+    left: 0;
+    &__links {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      flex-wrap: wrap;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      gap: 1rem;
+    }
+    &__link {
+      color: #424040;
+      transition: ease 0.3s;
+      &:hover {
+        color: $orange;
+      }
+    }
+    &__link a {
+      color: inherit;
+      text-decoration: none;
+    }
+    &__button {
+      display: none;
+    }
+  }
 }
