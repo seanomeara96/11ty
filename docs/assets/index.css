@@ -387,3 +387,31 @@ body {
         text-transform: uppercase;
         margin-bottom: 1em;
     }
+.colour-tile {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  position: relative;
+}
+.colour-tile__backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 70%, 0% 40%);
+            clip-path: polygon(0% 0%, 100% 0, 100% 70%, 0% 40%);
+  }
+.colour-tile__backdrop--orange {
+      background-color: #ff782b;
+    }
+.colour-tile__backdrop--blue {
+      background-color: #456796;
+    }
+.colour-tile__inner {
+    margin: 0 1rem;
+    position: relative;
+    background-color: #fff;
+    padding: 1rem;
+  }
+
