@@ -1,0 +1,25 @@
+.review {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  &__author {
+    font-size: 1.2rem;
+  }
+  &__rating {
+    color: $orange;
+    font-size: 1.2rem;
+  }
+  &__avatar {
+    background-color: purple;
+    color: #fff;
+    padding: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+}
