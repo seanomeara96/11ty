@@ -2,6 +2,15 @@
   display: flex;
   margin-bottom: 2rem;
   gap: 1rem;
+  /*
+  not a very descriptive name
+  */
+  &--no-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
   &__author {
     font-size: 1.2rem;
   }
