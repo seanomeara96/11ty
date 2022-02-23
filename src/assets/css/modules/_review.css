@@ -1,7 +1,10 @@
 .review {
   display: flex;
-  margin-bottom: 2rem;
+
   gap: 1rem;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 2rem;
   /*
   not a very descriptive name
   */
@@ -10,6 +13,12 @@
     align-items: center;
     text-align: center;
     gap: 0;
+  }
+  &--spaced {
+    margin: 1rem auto;
+    & div {
+      margin: 0.3rem 0;
+    }
   }
   &__author {
     font-size: 1.2rem;

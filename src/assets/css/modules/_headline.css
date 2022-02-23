@@ -1,0 +1,21 @@
+.headline {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 1.2;
+  &--small {
+    font-size: 0.5em;
+  }
+  &--blue {
+    color: $blue;
+  }
+  &--orange {
+    color: $orange;
+  }
+  &--center {
+    text-align: center;
+  }
+  &--light {
+    font-weight: 300;
+  }
+}

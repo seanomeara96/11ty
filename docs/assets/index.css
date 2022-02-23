@@ -412,12 +412,19 @@ body {
     margin: 0 1rem;
     position: relative;
     background-color: #fff;
-    padding: 1rem;
+    padding: 1rem 2rem;
+  }
+.colour-tile__section {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 .review {
   display: flex;
-  margin-bottom: 2rem;
+
   gap: 1rem;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 /*
   not a very descriptive name
@@ -428,6 +435,12 @@ body {
     text-align: center;
     gap: 0;
   }
+.review--spaced {
+    margin: 1rem auto;
+  }
+.review--spaced div {
+      margin: 0.3rem 0;
+    }
 .review__author {
     font-size: 1.2rem;
   }
@@ -447,5 +460,43 @@ body {
     align-items: center;
     font-weight: 700;
     font-size: 1.3rem;
+  }
+.headline {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+.headline--small {
+    font-size: 0.5em;
+  }
+.headline--blue {
+    color: #456796;
+  }
+.headline--orange {
+    color: #ff782b;
+  }
+.headline--center {
+    text-align: center;
+  }
+.headline--light {
+    font-weight: 300;
+  }
+.checklist {
+  list-style-type: none;
+  padding: 0;
+  color: gray;
+  font-size: 1.3rem;
+}
+.checklist li::before {
+    content: "\2611";
+    padding-right: 0.7rem;
+    color: inherit;
+  }
+.checklist li {
+    font-weight: 300;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    border-bottom: 1px solid grey;
   }
 
