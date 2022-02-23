@@ -388,9 +388,18 @@ body {
         margin-bottom: 1em;
     }
 .colour-tile {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+@media (min-width: 800px) {
+.colour-tile {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 2rem
+}
+  }
+.colour-tile {
   position: relative;
 }
 .colour-tile__backdrop {
@@ -409,11 +418,18 @@ body {
       background-color: #456796;
     }
 .colour-tile__inner {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
+  }
+@media (min-width: 800px) {
+.colour-tile__inner {
+      margin: 0 1rem;
+  }
+    }
+.colour-tile__inner {
     position: relative;
     background-color: #fff;
     padding: 1rem 2rem;
-  }
+}
 .colour-tile__section {
     margin-top: 1rem;
     margin-bottom: 1rem;
