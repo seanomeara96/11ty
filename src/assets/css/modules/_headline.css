@@ -1,7 +1,10 @@
 .headline {
   margin: 0;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2.2rem;
+  @media (min-width: 800px) {
+    font-size: 3rem;
+  }
   line-height: 1.2;
   &--small {
     font-size: 0.5em;

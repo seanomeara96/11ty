@@ -480,7 +480,14 @@ body {
 .headline {
   margin: 0;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2.2rem;
+}
+@media (min-width: 800px) {
+.headline {
+    font-size: 3rem
+}
+  }
+.headline {
   line-height: 1.2;
 }
 .headline--small {
