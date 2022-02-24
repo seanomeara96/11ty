@@ -86,6 +86,9 @@ body {
   max-width: 1200px;
   margin: auto;
 }
+.wrapper--full-height {
+    height: 100%;
+  }
 .button {
   background-color: #ff782b;
   border: none;
@@ -274,23 +277,31 @@ body {
     }
   }
 .pain-points {
+  display: flex;
+  height: 100%;
+  align-items: center;
   color: #fff;
 }
+.pain-points__inner {
+    max-width: 600px;
+  }
 .pain-points ul {
     padding: 0;
   }
 .pain-points__sub-title {
     text-transform: uppercase;
     font-weight: 100;
+    font-size: 1.5rem;
   }
 .pain-points__item {
-    color: #5f727f;
+    color: #fff;
     list-style-type: none;
   }
 .pain-points__item h4 {
       color: #ff782b;
       text-transform: uppercase;
       line-height: 1.6;
+      font-size: 1.2rem;
     }
 .background-img {
   display: block;
@@ -521,5 +532,18 @@ body {
     padding-bottom: 1em;
     padding-top: 1em;
     border-bottom: 1px solid grey;
+  }
+.table {
+  list-style-type: none;
+  padding: 0;
+}
+.table li {
+    padding: 0.3rem;
+  }
+.table li:nth-child(odd) {
+    background-color: #ececec;
+  }
+.table li:nth-child(even) {
+    background-color: #f7f7f7;
   }
 
