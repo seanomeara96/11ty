@@ -3,15 +3,31 @@
   padding: 0;
   color: gray;
   font-size: 1.3rem;
-  li::before {
-    content: "\2611";
-    padding-right: 0.7rem;
-    color: inherit;
-  }
   li {
     font-weight: 300;
     padding-bottom: 1em;
     padding-top: 1em;
     border-bottom: 1px solid grey;
+  }
+  &--condensed {
+    font-size: 1rem;
+    li {
+      padding-top: 0.75em;
+      padding-bottom: 0.75em;
+    }
+  }
+  &--tick {
+    li::before {
+      content: "\2611";
+      padding-right: 0.7rem;
+      color: inherit;
+    }
+  }
+  &--arrow {
+    li::before {
+      content: "\2794";
+      padding-right: 0.7rem;
+      color: inherit;
+    }
   }
 }

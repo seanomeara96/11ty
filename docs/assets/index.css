@@ -392,10 +392,17 @@ body {
     }
       }
   }
-.generic-image picture, .generic-image img {
-        width:100%;
-        height: 100%;
-    }
+.generic-image picture,
+  .generic-image img {
+    width: 100%;
+    height: 100%;
+  }
+.generic-image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
 .generic-content {
     color: #5f727f;
 }
@@ -534,17 +541,29 @@ body {
   color: gray;
   font-size: 1.3rem;
 }
-.checklist li::before {
-    content: "\2611";
-    padding-right: 0.7rem;
-    color: inherit;
-  }
 .checklist li {
     font-weight: 300;
     padding-bottom: 1em;
     padding-top: 1em;
     border-bottom: 1px solid grey;
   }
+.checklist--condensed {
+    font-size: 1rem;
+  }
+.checklist--condensed li {
+      padding-top: 0.75em;
+      padding-bottom: 0.75em;
+    }
+.checklist--tick li::before {
+      content: "\2611";
+      padding-right: 0.7rem;
+      color: inherit;
+    }
+.checklist--arrow li::before {
+      content: "\2794";
+      padding-right: 0.7rem;
+      color: inherit;
+    }
 .table {
   list-style-type: none;
   padding: 0;
