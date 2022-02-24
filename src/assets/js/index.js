@@ -25,5 +25,26 @@ function startTestimonialSlides() {
   nextSlide();
 }
 
+function showContent(e, content) {
+  return (e.target.innerHTML = content);
+}
+
+function truncateReviews() {
+  const reviews = document.querySelectorAll("#reviews-specialties .review");
+  console.log(reviews);
+  reviews.forEach((review) => {
+    const reviewElem = review.querySelector(".review__content");
+    const content = reviewElem.innerHTML;
+    const updatedContent =
+      content.substring(0, 300) +
+      `...<strong class="clickable">Read More</strong>`;
+    reviewElem.innerHTML = updatedContent;
+    reviewElem.querySelector("strong").addEventListener("click", () => {
+      reviewElem.innerHTML = content;
+    });
+  });
+}
+
 addNavToggle();
 startTestimonialSlides();
+truncateReviews();

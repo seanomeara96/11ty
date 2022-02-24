@@ -12,6 +12,10 @@ body {
 .no-scroll {
   overflow-y: hidden;
 }
+.clickable {
+  color: #ff782b;
+  cursor: pointer;
+}
 @media (min-width: 800px) {
 .footer {
     display: flex;
@@ -372,14 +376,22 @@ body {
     background-color: #649be4;
   }
 .rows > div {
-        width:100%;
-    }
+    width: 100%;
+  }
 @media (min-width: 600px) {
 .rows {
-        display: flex;
-        gap: 2rem
+    display: flex;
+    gap: 2rem
 }
+    .rows--break-900 {
+      display: block;
     }
+      @media (min-width: 900px) {
+    .rows--break-900 {
+        display: flex
+    }
+      }
+  }
 .generic-image picture, .generic-image img {
         width:100%;
         height: 100%;
