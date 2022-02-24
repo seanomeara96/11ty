@@ -1,0 +1,7 @@
+.embedded-video {
+  width: 100%;
+  height: 300px;
+  @media (min-width: 600px) {
+    height: 600px;
+  }
+}

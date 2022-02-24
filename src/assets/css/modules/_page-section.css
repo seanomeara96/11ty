@@ -2,6 +2,9 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   position: relative;
+  &--first {
+    padding-top: 3rem;
+  }
   &--no-p {
     padding: 0;
   }

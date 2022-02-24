@@ -1,0 +1,11 @@
+.faq {
+  h3 {
+    display: inline;
+  }
+  details {
+    margin: 1rem 0;
+  }
+  summary {
+    text-transform: uppercase;
+  }
+}

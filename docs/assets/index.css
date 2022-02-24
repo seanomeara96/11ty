@@ -61,6 +61,9 @@ body {
   padding-bottom: 1rem;
   position: relative;
 }
+.page-section--first {
+    padding-top: 3rem;
+  }
 .page-section--no-p {
     padding: 0;
   }
@@ -526,6 +529,9 @@ body {
 .headline--blue {
     color: #456796;
   }
+.headline--dark-blue {
+    color: #033150;
+  }
 .headline--orange {
     color: #ff782b;
   }
@@ -576,5 +582,23 @@ body {
   }
 .table li:nth-child(even) {
     background-color: #f7f7f7;
+  }
+.faq h3 {
+    display: inline;
+  }
+.faq details {
+    margin: 1rem 0;
+  }
+.faq summary {
+    text-transform: uppercase;
+  }
+.embedded-video {
+  width: 100%;
+  height: 300px;
+}
+@media (min-width: 600px) {
+.embedded-video {
+    height: 600px
+}
   }
 
