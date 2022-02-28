@@ -1,0 +1,76 @@
+---
+cards:
+  - assessment_type: Initial Assessment
+    price: 60
+    service_type: CONSULTATION
+    duration: 30 MINUTES DURATION
+    treatment_type: FOLLOW UP TREATMENT ADVICE
+    therapy_type: Physiotherapy
+  - treatment_type: Follow Up Treatment
+    price: 60
+    service_type: TREATMENT
+    duration: 30 MINUTES DURATION
+    assessment_type: FOLLOW UP TREATMENT ADVICE
+  - number_of_treatments: 1
+    treatment_type: Non-Surgical Spinal Decompress Treatment
+    price: 150
+    assessment_type: ASSESSMENT AND TREATMENT
+    duration: 55 MINS IN DURATION
+    also_includes:
+      TREATMENT 2 TO 6 WILL ALSO INCLUDE SOFT TISSUE MOBILISATION AND EXERCISE
+      REHABILITATION
+  - number_of_treatments: 6
+    treatment_type: Non-Surgical Spinal Decompress Treatments
+    price: 660
+    assessment_type: FULL PHYSICAL ASSESSMENT AT FIRST APPOINTMENT WITH TREATMENT
+    duration: EACH APPOINTMENT 55 MINS IN DURATION
+    also_includes:
+      TREATMENT 2 TO 6 WILL ALSO INCLUDE SOFT TISSUE MOBILISATION AND EXERCISE
+      REHABILITATION
+  - number_of_treatments: 10
+    treatment_type: Non-Surgical Spinal Decompress Treatments
+    price: 1000
+    assessment_type: FULL PHYSICAL ASSESSMENT AT FIRST APPOINTMENT WITH TREATMENT
+    duration: EACH APPOINTMENT 55 MINS IN DURATION
+    also_includes:
+      TREATMENT 2 TO 10 WILL ALSO INCLUDE SOFT TISSUE MOBILISATION AND
+      EXERCISE REHABILITATION
+---
+
+<%- include('/header', {title: "About DCI ", description: `DCI description`,
+active: 3}) %>
+<main>
+  <section class="page-section">
+    <div class="wrapper">
+      <h1>Pricing</h1>
+    </div>
+  </section>
+  <section class="page-section">
+    <div class="wrapper">
+      <h2>Physiotherapy Pricing</h2>
+      <div class="rows">
+        <% for(let i in cards) { %>
+        <div class="price-card">
+          <div class="price-card__service-type">
+            <%= cards[i].assessment_type %>
+          </div>
+          <div class="price-card__price">60€</div>
+          <ul class="price-card__service-includes">
+            <li>consultation</li>
+            <li>30 minutes duration</li>
+            <li>follow up treatment advice</li>
+          </ul>
+          <a href="" class="button">book now</a>
+        </div>
+        <%} %>
+      </div>
+    </div>
+  </section>
+  <section class="page-section">
+    <div class="wrapper">
+      <h2>Non-Surgical Spinal Decompression Pricing</h2>
+    </div>
+  </section>
+</main>
+<%- include('/reviews-carousel')%> <%- include('/business-details')%> <%-
+include('/footer') %>
