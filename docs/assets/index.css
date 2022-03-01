@@ -149,16 +149,11 @@ body {
   top: 0;
   left: 0;
   background-color: #fff;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   width: 100%;
   z-index: 10;
 }
-@media (min-width: 800px) {
-.nav {
-    position: -webkit-sticky;
-    position: sticky
-}
-  }
 .nav__button {
     font-size: 1.3rem;
     position: relative;

@@ -3,12 +3,9 @@
   top: 0;
   left: 0;
   background-color: #fff;
-  position: fixed;
+  position: sticky;
   width: 100%;
   z-index: 10;
-  @media (min-width: 800px) {
-    position: sticky;
-  }
   &__button {
     font-size: 1.3rem;
     position: relative;
