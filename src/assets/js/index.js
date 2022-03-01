@@ -45,6 +45,22 @@ function truncateReviews() {
   });
 }
 
+function applyDisplayStateToggles() {
+  function toggleDisplayState(element) {
+    element.classList.toggle("details__body--is-open");
+  }
+  document
+    .querySelectorAll(".details")
+    .forEach((item) =>
+      item
+        .querySelector(".details__summary")
+        .addEventListener("click", () =>
+          toggleDisplayState(item.querySelector(".details__body"))
+        )
+    );
+}
+
 addNavToggle();
 startTestimonialSlides();
 truncateReviews();
+applyDisplayStateToggles();

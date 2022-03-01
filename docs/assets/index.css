@@ -521,6 +521,9 @@ body {
 .headline--small {
     font-size: 0.5em;
   }
+.headline--normal {
+    font-size: 1em;
+  }
 .headline--blue {
     color: #456796;
   }
@@ -596,4 +599,24 @@ body {
     height: 600px
 }
   }
+.details {
+  cursor: pointer;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+.details__body {
+    height: 0;
+  }
+@media (min-width: 800px) {
+.details__body {
+      height: auto
+  }
+    }
+.details__body {
+    overflow: hidden;
+}
+.details__body--is-open {
+      height: auto;
+    }
 

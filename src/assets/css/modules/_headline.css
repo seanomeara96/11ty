@@ -9,6 +9,9 @@
   &--small {
     font-size: 0.5em;
   }
+  &--normal {
+    font-size: 1em;
+  }
   &--blue {
     color: $blue;
   }
