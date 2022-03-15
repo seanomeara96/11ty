@@ -464,7 +464,6 @@ body {
   }
 .review {
   display: flex;
-
   gap: 1rem;
   max-width: 800px;
   margin: auto;
@@ -618,5 +617,31 @@ body {
 }
 .details__body--is-open {
       height: auto;
+    }
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.carousel__slide {
+    display: none;
+    -webkit-animation: fadein;
+            animation: fadein;
+    -webkit-animation-duration: 1.3s;
+            animation-duration: 1.3s;
+  }
+.carousel__slide--is-visible {
+      display: flex;
     }
 

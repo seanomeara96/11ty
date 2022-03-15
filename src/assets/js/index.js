@@ -9,18 +9,16 @@ function addNavToggle() {
 }
 
 function startTestimonialSlides() {
+  const slideSelector = ".carousel__slide";
+  const isVisibleClassName = "carousel__slide--is-visible";
   const testimonialSection = document.querySelector("#testimonials");
-  const slides = testimonialSection.querySelectorAll(".review");
-  function hideSlides() {
-    slides.forEach((slide) => (slide.style.display = "none"));
-  }
-  hideSlides();
-  let count = 0;
-  function nextSlide() {
-    hideSlides();
-    slides[count].style.display = "flex";
-    count < slides.length - 1 ? count++ : (count = 0);
-    setTimeout(nextSlide, 3000);
+  const slides = testimonialSection.querySelectorAll(slideSelector);
+  function nextSlide(count = 0) {
+    slides.forEach(slide => slide.classList.remove(isVisibleClassName))
+    //const previousSlide = count > 0 ? (count - 1) : (slides.length - 1);
+    const nextSlideIdx = count < slides.length - 1 ? count + 1 : 0;
+    slides[count].classList.add(isVisibleClassName);
+    setTimeout(() => nextSlide(nextSlideIdx), 10000);
   }
   nextSlide();
 }
