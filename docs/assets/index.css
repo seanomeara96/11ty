@@ -663,4 +663,33 @@ body {
       font-size: 2rem;
       color: grey;
     }
+.price-card {
+  background: rgb(67, 86, 112);
+  background: radial-gradient(
+    circle,
+    rgba(67, 86, 112, 1) 0%,
+    rgba(44, 66, 96, 1) 69%
+  );
+  padding: 1rem;
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.price-card__price {
+    background-color: #ff782b;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    color: #fff;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
 

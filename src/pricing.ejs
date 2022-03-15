@@ -3,17 +3,20 @@ layout: layout.ejs
 
 cards:
   - assessment_type: Initial Assessment
+    type: physio
     price: 60
     service_type: CONSULTATION
     duration: 30 MINUTES DURATION
     treatment_type: FOLLOW UP TREATMENT ADVICE
     therapy_type: Physiotherapy
   - treatment_type: Follow Up Treatment
+    type: physio
     price: 60
     service_type: TREATMENT
     duration: 30 MINUTES DURATION
     assessment_type: FOLLOW UP TREATMENT ADVICE
   - number_of_treatments: 1
+    type: nssd
     treatment_type: Non-Surgical Spinal Decompress Treatment
     price: 150
     assessment_type: ASSESSMENT AND TREATMENT
@@ -22,6 +25,7 @@ cards:
       TREATMENT 2 TO 6 WILL ALSO INCLUDE SOFT TISSUE MOBILISATION AND EXERCISE
       REHABILITATION
   - number_of_treatments: 6
+    type: nssd
     treatment_type: Non-Surgical Spinal Decompress Treatments
     price: 660
     assessment_type: FULL PHYSICAL ASSESSMENT AT FIRST APPOINTMENT WITH TREATMENT
@@ -30,6 +34,7 @@ cards:
       TREATMENT 2 TO 6 WILL ALSO INCLUDE SOFT TISSUE MOBILISATION AND EXERCISE
       REHABILITATION
   - number_of_treatments: 10
+    type: nssd
     treatment_type: Non-Surgical Spinal Decompress Treatments
     price: 1000
     assessment_type: FULL PHYSICAL ASSESSMENT AT FIRST APPOINTMENT WITH TREATMENT
@@ -49,26 +54,48 @@ cards:
     <div class="wrapper">
       <h2>Physiotherapy Pricing</h2>
       <div class="rows">
-        <% for(let i in cards) { %>
+        <% for(const i in cards) { if(cards[i].type === "physio"){ %>
         <div class="price-card">
+          <div class="price-card__price">60€</div>
           <div class="price-card__service-type">
             <%= cards[i].assessment_type %>
           </div>
-          <div class="price-card__price">60€</div>
+
           <ul class="price-card__service-includes">
             <li>consultation</li>
             <li>30 minutes duration</li>
             <li>follow up treatment advice</li>
           </ul>
-          <a href="" class="button">book now</a>
+          <div class="price-card__button-container">
+            <a href="" class="button">book now</a>
+          </div>
         </div>
-        <%} %>
+        <% }} %>
       </div>
     </div>
   </section>
   <section class="page-section">
     <div class="wrapper">
       <h2>Non-Surgical Spinal Decompression Pricing</h2>
+      <div class="rows">
+        <% for(const i in cards) { if(cards[i].type === "nssd"){ %>
+        <div class="price-card">
+          <div class="price-card__price">60€</div>
+          <div class="price-card__service-type">
+            <%= cards[i].assessment_type %>
+          </div>
+
+          <ul class="price-card__service-includes">
+            <li>consultation</li>
+            <li>30 minutes duration</li>
+            <li>follow up treatment advice</li>
+          </ul>
+          <div class="price-card__button-container">
+            <a href="" class="button">book now</a>
+          </div>
+        </div>
+        <% }} %>
+      </div>
     </div>
   </section>
 </main>
