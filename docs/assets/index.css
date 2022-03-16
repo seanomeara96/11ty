@@ -664,6 +664,7 @@ body {
       color: grey;
     }
 .price-card {
+  margin-bottom: 2rem;
   background: rgb(67, 86, 112);
   background: radial-gradient(
     circle,

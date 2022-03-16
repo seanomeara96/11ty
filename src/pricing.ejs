@@ -2,46 +2,53 @@
 layout: layout.ejs
 
 cards:
-  - assessment_type: Initial Assessment
-    type: physio
+  - type: physio
+    number_of_treatments: 0
+    assessment_type: initial assessment
     price: 60
-    service_type: CONSULTATION
-    duration: 30 MINUTES DURATION
-    treatment_type: FOLLOW UP TREATMENT ADVICE
-    therapy_type: Physiotherapy
-  - treatment_type: Follow Up Treatment
-    type: physio
+    service_type: consultation
+    duration: 30 minutes duration
+    treatment_type: follow up treatment advice
+    therapy_type: physiotherapy
+
+  - type: physio
+    number_of_treatments: 0
+    assessment_type: follow up treatment advice
     price: 60
-    service_type: TREATMENT
-    duration: 30 MINUTES DURATION
-    assessment_type: FOLLOW UP TREATMENT ADVICE
-  - number_of_treatments: 1
-    type: nssd
-    treatment_type: Non-Surgical Spinal Decompress Treatment
+    service_type: treatment
+    duration: 30 minutes duration
+    treatment_type: follow up treatment
+    therapy_type: physiotherapy
+
+  - type: nssd
+    number_of_treatments: 1
+    assessment_type: assess,ent and treatment
     price: 150
-    assessment_type: ASSESSMENT AND TREATMENT
-    duration: 55 MINS IN DURATION
+    treatment_type: Non-Surgical Spinal Decompress Treatment
+    duration: 55 mins duration
     also_includes:
-      TREATMENT 2 TO 6 WILL ALSO INCLUDE SOFT TISSUE MOBILISATION AND EXERCISE
-      REHABILITATION
-  - number_of_treatments: 6
-    type: nssd
+      treatment 2 to 6 will also include soft tissue mobilisation and exercise
+      rehabilitation
+
+  - type: nssd
+    number_of_treatments: 6
     treatment_type: Non-Surgical Spinal Decompress Treatments
     price: 660
-    assessment_type: FULL PHYSICAL ASSESSMENT AT FIRST APPOINTMENT WITH TREATMENT
-    duration: EACH APPOINTMENT 55 MINS IN DURATION
+    assessment_type: full physical assessment at first appointment with treatment
+    duration: each appointment 55 mins in duration
     also_includes:
-      TREATMENT 2 TO 6 WILL ALSO INCLUDE SOFT TISSUE MOBILISATION AND EXERCISE
-      REHABILITATION
+      treatment 2 to 6 will also include soft tissue mobilisation and exercise
+      rehabilitation
+
   - number_of_treatments: 10
     type: nssd
     treatment_type: Non-Surgical Spinal Decompress Treatments
     price: 1000
-    assessment_type: FULL PHYSICAL ASSESSMENT AT FIRST APPOINTMENT WITH TREATMENT
-    duration: EACH APPOINTMENT 55 MINS IN DURATION
+    assessment_type: full physical assessment at first appointment with treatment
+    duration: each appointment 55 mins in duration
     also_includes:
-      TREATMENT 2 TO 10 WILL ALSO INCLUDE SOFT TISSUE MOBILISATION AND
-      EXERCISE REHABILITATION
+      treatment 2 to 10 will also include soft tissue mobilisation and
+      exercise rehabilitation
 ---
 
 <main>
