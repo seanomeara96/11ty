@@ -402,8 +402,14 @@ body {
        object-position: center;
   }
 .generic-content {
-    color: #5f727f;
+  color: #5f727f;
 }
+.generic-content--large {
+    font-size: 1.8rem;
+  }
+.generic-content--light {
+    font-weight: 300;
+  }
 .sub-title {
     font-size: 1.2rem;
     margin-bottom: 1.5em;
