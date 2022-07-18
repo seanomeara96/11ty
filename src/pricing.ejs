@@ -1,28 +1,29 @@
 ---
 layout: layout.ejs
+active: 5
 
 cards:
   - type: physio
     number_of_treatments: 0
-    assessment_type: initial assessment
+    assessment_type: Initial Assessment
     price: 60
-    service_type: consultation
-    duration: 30 minutes duration
+    service_type: Consultation
+    duration: 30 Minutes Duration
     treatment_type: follow up treatment advice
     therapy_type: physiotherapy
 
   - type: physio
     number_of_treatments: 0
-    assessment_type: follow up treatment advice
+    assessment_type: Follow Up Treatment Advice
     price: 60
     service_type: treatment
-    duration: 30 minutes duration
+    duration: 30 Minutes Duration
     treatment_type: follow up treatment
     therapy_type: physiotherapy
 
   - type: nssd
     number_of_treatments: 1
-    assessment_type: assess,ent and treatment
+    assessment_type: Assessment and Treatment
     price: 150
     treatment_type: Non-Surgical Spinal Decompress Treatment
     duration: 55 mins duration
@@ -59,22 +60,26 @@ cards:
   </section>
   <section class="page-section">
     <div class="wrapper">
-      <h2>Physiotherapy Pricing</h2>
+      <h2 class="headline headline--center headline--light headline--normal">
+        Physiotherapy
+      </h2>
+      <h3 class="headline headline--center">Pricing</h3>
       <div class="rows">
-        <% for(const i in cards) { if(cards[i].type === "physio"){ %>
-        <div class="price-card">
-          <div class="price-card__price">60€</div>
+        <% for(const card of cards) { if(card.type === "physio"){ %>
+        <div class="price-card" id="<%= cards.indexOf(card) %>">
+          <div class="price-card__price"><%= '€'+card.price %></div>
+          <div class="price-card__therapy-type"><%= card.therapy_type %></div>
           <div class="price-card__service-type">
-            <%= cards[i].assessment_type %>
+            <%= card.assessment_type %>
           </div>
 
           <ul class="price-card__service-includes">
-            <li>consultation</li>
-            <li>30 minutes duration</li>
+            <li>Consultation</li>
+            <li>30 Minutes Duration</li>
             <li>follow up treatment advice</li>
           </ul>
           <div class="price-card__button-container">
-            <a href="" class="button">book now</a>
+            <a href="" class="button">Book Now</a>
           </div>
         </div>
         <% }} %>
@@ -83,18 +88,21 @@ cards:
   </section>
   <section class="page-section">
     <div class="wrapper">
-      <h2>Non-Surgical Spinal Decompression Pricing</h2>
+      <h2 class="headline headline--center headline--light headline--normal">
+        Non-Surgical Spinal Decompression
+      </h2>
+      <h3 class="headline headline--center">Pricing</h3>
       <div class="rows">
-        <% for(const i in cards) { if(cards[i].type === "nssd"){ %>
-        <div class="price-card">
+        <% for(const card of cards) { if(card.type === "nssd"){ %>
+        <div class="price-card" id="<%= cards.indexOf(card) %>">
           <div class="price-card__price">60€</div>
           <div class="price-card__service-type">
-            <%= cards[i].assessment_type %>
+            <%= card.assessment_type %>
           </div>
 
           <ul class="price-card__service-includes">
-            <li>consultation</li>
-            <li>30 minutes duration</li>
+            <li>Consultation</li>
+            <li>30 Minutes Duration</li>
             <li>follow up treatment advice</li>
           </ul>
           <div class="price-card__button-container">
