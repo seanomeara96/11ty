@@ -104,7 +104,7 @@
   &__link {
     text-transform: uppercase;
     display: inline-block;
-    &--active a {
+    &--active > a {
       border: 2px solid $orange;
       color: $orange;
       font-weight: 700;

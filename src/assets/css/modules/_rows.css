@@ -5,11 +5,12 @@
   @media (min-width: 600px) {
     display: flex;
     gap: 2rem;
-    &--break-900 {
-      display: block;
-      @media (min-width: 900px) {
-        display: flex;
-      }
+  }
+
+  &--break-900 {
+    display: block;
+    @media (min-width: 900px) {
+      display: flex;
     }
   }
 }
