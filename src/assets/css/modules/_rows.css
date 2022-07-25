@@ -5,6 +5,9 @@
   @media (min-width: 600px) {
     display: flex;
     gap: 2rem;
+    & > div {
+      width: 50%;
+    }
   }
 
   &--break-900 {

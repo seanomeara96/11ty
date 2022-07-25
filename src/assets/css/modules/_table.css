@@ -11,4 +11,10 @@
   li:nth-child(even) {
     background-color: $lightGray;
   }
+  &--large {
+    font-size: 1.2rem;
+  }
+  &--low-contrast {
+    color: gray;
+  }
 }

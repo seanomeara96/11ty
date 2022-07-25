@@ -19,3 +19,7 @@ body {
   color: $orange;
   cursor: pointer;
 }
+
+a {
+  color: $orange;
+}
