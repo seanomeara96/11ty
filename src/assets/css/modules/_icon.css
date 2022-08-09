@@ -1,0 +1,10 @@
+.icon {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  margin: auto auto 1rem auto;
+  padding: 0.5rem;
+  &--blue {
+    background-color: $blue;
+  }
+}

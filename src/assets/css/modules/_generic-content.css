@@ -4,7 +4,7 @@
     font-size: 1.8rem;
   }
   &--light {
-    font-weight: 300;
+    font-weight: light;
   }
   &--center {
     text-align: center;

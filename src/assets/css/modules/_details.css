@@ -3,6 +3,10 @@
   border-bottom: 1px solid lightgray;
   padding-bottom: 0.3rem;
   margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  summary {
+    margin-bottom: 0.8rem;
+  }
   &__body {
     height: 0;
     @media (min-width: 800px) {
