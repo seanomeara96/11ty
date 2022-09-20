@@ -26,6 +26,12 @@
   &--navy {
     background-color: $navy;
   }
+  &--blue {
+    background-color: $blue;
+  }
+  &--no-p {
+    padding: 0;
+  }
   &--white {
     background-color: #fff;
   }

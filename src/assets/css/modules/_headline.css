@@ -10,6 +10,7 @@
     font-size: 0.5em;
   }
   &--normal {
+    line-height: 1.1;
     font-size: 1.7em;
   }
   &--blue {

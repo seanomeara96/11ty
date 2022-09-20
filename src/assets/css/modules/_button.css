@@ -4,12 +4,19 @@
   border-radius: 3px;
   display: inline-block;
   color: #fff;
-  padding: .65em;
+  padding: 0.65em;
   text-decoration: none;
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
+  &:hover {
+    background-color: gray;
+  }
   &--large {
     text-transform: uppercase;
     font-size: 1.2rem;
+  }
+  &--blue {
+    background-color: $blue;
   }
 }

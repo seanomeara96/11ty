@@ -1,0 +1,51 @@
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #fff;
+  padding: 4rem 2rem;
+  h2 {
+    text-align: center;
+  }
+  &__form {
+    width: 100%;
+  }
+
+  &__form > div {
+    gap: 1rem;
+  }
+  &__form > div > input,
+  &__form > div > select {
+    width: 100%;
+  }
+  @media (min-width: 800px) {
+    &__form > div {
+      display: flex;
+      gap: 1rem;
+    }
+
+    &__form > div > input,
+    &__form > div > select {
+      width: 50%;
+    }
+  }
+  &__form input::placeholder {
+    color: #fff;
+  }
+  &__form input,
+  &__form textarea,
+  &__form select {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 1rem;
+  }
+  &__form textarea {
+    width: 100%;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+}

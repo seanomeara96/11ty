@@ -1,0 +1,67 @@
+---
+layout: layout.ejs
+---
+
+<main>
+  <section class="page-section">
+    <div class="wrapper">
+      <h1 class="headline headline--light headline--center">
+        Book an
+        <div class="headline--normal">Appointment</div>
+      </h1>
+      <div class="rows">
+        <a
+          href="https://clientportal.powerdiary.com/clientportal/89d6bf4a-5529-43c2-8ff6-19f67d3e6f0b"
+          ><button class="button button--large">Online Booking</button></a
+        >
+        <a href="tel:+353 86 199 0706"
+          ><button class="button button--large button--blue">
+            Book By Phone
+          </button></a
+        >
+      </div>
+    </div>
+  </section>
+  <section class="page-section page-section--blue page-section--no-p">
+    <div class="rows">
+      <div class="generic-image">
+        <picture>
+          <img
+            src="https://dcphysiotherapy.ie/wp-content/uploads/2018/12/3.jpg?id=52"
+            alt="Person booking an appointment"
+          />
+        </picture>
+      </div>
+
+      <div class="booking-form">
+        <h2>Book an Appointment</h2>
+        <form class="booking-form__form" action="">
+          <div>
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email" />
+          </div>
+          <div>
+            <input type="text" placeholder="Phone" />
+            <select name="Date" placeholder="date" id="">
+              <option value="Date">Date</option>
+              <option value="Date">Now</option>
+              <option value="Date">Tomorrow</option>
+              <option value="Date">Next Week</option>
+            </select>
+          </div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <div class="booking-form__button">
+            <button class="button">Make an Appointment</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <%- include("/reviews-carousel") %> <%- include("/business-details") %>
+</main>

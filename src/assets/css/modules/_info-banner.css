@@ -1,0 +1,26 @@
+.info-banner {
+  padding: 0.5rem;
+  display: none;
+  @media (min-width: 800px) {
+    display: block;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  background-color: #39464f;
+  color: $ultraLightText;
+  &__number a {
+    color: inherit;
+  }
+  &__left {
+    display: flex;
+    gap: 1rem;
+  }
+
+  svg {
+    height: 1rem;
+    width: 2rem;
+  }
+}
