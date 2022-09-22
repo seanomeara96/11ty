@@ -1,4 +1,16 @@
 .footer {
+  &__social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  &__social svg {
+    height: 1.2rem;
+    width: 1rem;
+  }
+  &__copyright {
+    text-align: center;
+  }
   @media (min-width: 800px) {
     display: flex;
     justify-content: space-between;
