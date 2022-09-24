@@ -55,11 +55,6 @@ cards:
 <main>
   <section class="page-section">
     <div class="wrapper">
-      <h1>Pricing</h1>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="wrapper">
       <h2 class="headline headline--center headline--light headline--normal">
         Physiotherapy
       </h2>
@@ -96,6 +91,11 @@ cards:
         <% for(const card of cards) { if(card.type === "nssd"){ %>
         <div class="price-card" id="<%= cards.indexOf(card) %>">
           <div class="price-card__price">€<%= card.price %></div>
+          <% if(card.number_of_treatments){ %>
+          <div style="font-size: 2rem" class="price-card__qty">
+            <%= card.number_of_treatments %>
+          </div>
+          <% }%>
           <div class="price-card__service-type">
             <%= card.assessment_type %>
           </div>
