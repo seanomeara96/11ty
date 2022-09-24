@@ -34,7 +34,7 @@ cards:
   - type: nssd
     number_of_treatments: 6
     treatment_type: Non-Surgical Spinal Decompress Treatments
-    price: 660
+    price: 800
     assessment_type: full physical assessment at first appointment with treatment
     duration: each appointment 55 mins in duration
     also_includes:
@@ -79,7 +79,7 @@ cards:
             <li>follow up treatment advice</li>
           </ul>
           <div class="price-card__button-container">
-            <a href="" class="button">Book Now</a>
+            <a href="/book-an-appointment/" class="button">Book Now</a>
           </div>
         </div>
         <% }} %>
@@ -95,7 +95,7 @@ cards:
       <div class="rows">
         <% for(const card of cards) { if(card.type === "nssd"){ %>
         <div class="price-card" id="<%= cards.indexOf(card) %>">
-          <div class="price-card__price">60€</div>
+          <div class="price-card__price">€<%= card.price %></div>
           <div class="price-card__service-type">
             <%= card.assessment_type %>
           </div>
@@ -106,7 +106,7 @@ cards:
             <li>follow up treatment advice</li>
           </ul>
           <div class="price-card__button-container">
-            <a href="" class="button">book now</a>
+            <a href="/book-an-appointment/" class="button">book now</a>
           </div>
         </div>
         <% }} %>
