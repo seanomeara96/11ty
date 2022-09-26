@@ -27,9 +27,6 @@ cards:
     price: 150
     treatment_type: Non-Surgical Spinal Decompress Treatment
     duration: 55 mins duration
-    also_includes:
-      treatment 2 to 6 will also include soft tissue mobilisation and exercise
-      rehabilitation
 
   - type: nssd
     number_of_treatments: 6
@@ -52,7 +49,7 @@ cards:
       exercise rehabilitation
 ---
 
-<main>
+<main style="text-transform: uppercase">
   <section class="page-section">
     <div class="wrapper">
       <h2 class="headline headline--center headline--light headline--normal">
@@ -70,7 +67,7 @@ cards:
 
           <ul class="price-card__service-includes">
             <li>Consultation</li>
-            <li>30 Minutes Duration</li>
+            <li><%= card.duration %></li>
             <li>follow up treatment advice</li>
           </ul>
           <div class="price-card__button-container">
@@ -90,21 +87,36 @@ cards:
       <div class="rows">
         <% for(const card of cards) { if(card.type === "nssd"){ %>
         <div class="price-card" id="<%= cards.indexOf(card) %>">
-          <div class="price-card__price">€<%= card.price %></div>
-          <% if(card.number_of_treatments){ %>
-          <div style="font-size: 2rem" class="price-card__qty">
-            <%= card.number_of_treatments %>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: 1rem;
+            "
+          >
+            <div class="price-card__price">€<%= card.price %></div>
+            <% if(card.number_of_treatments){ %>
+            <div style="font-size: 2rem" class="price-card__qty">
+              <%= card.number_of_treatments %> Treatments
+            </div>
+            <% }%>
           </div>
-          <% }%>
           <div class="price-card__service-type">
             <%= card.assessment_type %>
           </div>
 
           <ul class="price-card__service-includes">
-            <li>Consultation</li>
-            <li>30 Minutes Duration</li>
+            <li><%= card.service_type %></li>
+            <li><%= card.duration %></li>
             <li>follow up treatment advice</li>
           </ul>
+
+          <% if(card.also_includes){ %>
+          <div style="text-align: center"><%= card.also_includes %></div>
+          <% } %>
+
           <div class="price-card__button-container">
             <a href="/book-an-appointment/" class="button">book now</a>
           </div>
